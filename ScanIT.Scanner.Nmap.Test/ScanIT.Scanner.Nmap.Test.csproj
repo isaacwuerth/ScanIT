@@ -6,6 +6,8 @@
         <Nullable>enable</Nullable>
 
         <IsPackable>false</IsPackable>
+
+        <RootNamespace>ScanIT.Nmap.Test</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>
@@ -23,6 +25,12 @@
 
     <ItemGroup>
       <ProjectReference Include="..\ScanIT.Common\ScanIT.Common.csproj" />
-      <ProjectReference Include="..\ScanIT.Nmap\ScanIT.Nmap.csproj" />
+      <ProjectReference Include="..\ScanIT.Scanner.Nmap\ScanIT.Scanner.Nmap.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <Content Include="Resources\*.*">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </Content>
     </ItemGroup>
 </Project>

@@ -1,4 +1,4 @@
-﻿namespace ScanIT.Nmap.Options.Ports;
+﻿namespace ScanIT.Scanner.Nmap.Options.Ports;
 
 public class AllPorts: IPort
 {

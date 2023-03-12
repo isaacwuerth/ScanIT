@@ -1,7 +1,7 @@
 ﻿using System.Text;
-using ScanIT.Nmap.Options.Target;
+using ScanIT.Scanner.Nmap.Options.Target;
 
-namespace ScanIT.Nmap;
+namespace ScanIT.Scanner.Nmap;
 
 public class TargetList: List<ITarget>, ITarget
 {

@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<!-- Nmap 7.93 scan initiated Sat Mar 11 15:37:09 2023 as: &quot;C:\\Program Files (x86)\\Nmap\\nmap.exe&quot; -&#45;no-stylesheet -oX test.xml -O -&#45;osscan-guess -sS -sV -sC -T4 -p 80,443,21 192.168.1.1 192.168.1.32 google.com -->
+<nmaprun scanner="nmap" args="&quot;C:\\Program Files (x86)\\Nmap\\nmap.exe&quot; -&#45;no-stylesheet -oX test.xml -O -&#45;osscan-guess -sS -sV -sC -T4 -p 80,443,21 192.168.1.1 192.168.1.32 google.com" start="1678545429" startstr="Sat Mar 11 15:37:09 2023" version="7.93" xmloutputversion="1.05">
+	<scaninfo type="syn" protocol="tcp" numservices="3" services="21,80,443"/>
+	<verbose level="0"/>
+	<debugging level="0"/>
+	<hosthint>
+		<status state="up" reason="arp-response" reason_ttl="0"/>
+		<address addr="192.168.1.1" addrtype="ipv4"/>
+		<address addr="3C:37:12:68:9B:4B" addrtype="mac" vendor="AVM Audiovisuelles Marketing und Computersysteme GmbH"/>
+	</hosthint>
+	<host starttime="1678545441" endtime="1678545469">
+		<status state="up" reason="arp-response" reason_ttl="0"/>
+		<address addr="192.168.1.1" addrtype="ipv4"/>
+		<address addr="3C:37:12:68:9B:4B" addrtype="mac" vendor="AVM Audiovisuelles Marketing und Computersysteme GmbH"/>
+		<hostnames>
+			<hostname name="fritz.box" type="PTR"/>
+		</hostnames>
+		<ports>
+			<port protocol="tcp" portid="21">
+				<state state="open" reason="syn-ack" reason_ttl="64"/>
+				<service name="ftp" product="AVM FRITZ!Box ftpd" extrainfo="model 68505G" devicetype="broadband router" method="probed" conf="10"/>
+				<script id="ftp-syst" output="&#xa;  SYST: Version: Linux 4.4.60&#xa;  STAT: &#xa; FRITZ!Box68505G FTP server status:&#xa;     Connected to 192.168.1.32&#xa;     Waiting for user name&#xa;     TYPE: ASCII, FORM: Nonprint; STRUcture: File; transfer MODE: Stream&#xa;     No data connection&#xa;End of status">
+					<elem key="SYST">Version: Linux 4.4.60</elem>
+					<elem key="STAT">&#xa; FRITZ!Box68505G FTP server status:&#xa;     Connected to 192.168.1.32&#xa;     Waiting for user name&#xa;     TYPE: ASCII, FORM: Nonprint; STRUcture: File; transfer MODE: Stream&#xa;     No data connection&#xa;End of status</elem>
+				</script>
+				<script id="ssl-cert" output="Subject: commonName=7l3gkxuus397b1i9.myfritz.net&#xa;Subject Alternative Name: DNS:7l3gkxuus397b1i9.myfritz.net, DNS:fritz.box, DNS:www.fritz.box, DNS:myfritz.box, DNS:www.myfritz.box, DNS:fritz.nas, DNS:www.fritz.nas&#xa;Not valid before: 2022-12-30T15:48:11&#xa;Not valid after:  2038-01-15T15:48:11">
+					<table key="subject">
+						<elem key="commonName">7l3gkxuus397b1i9.myfritz.net</elem>
+					</table>
+					<table key="issuer">
+						<elem key="commonName">7l3gkxuus397b1i9.myfritz.net</elem>
+					</table>
+					<table key="pubkey">
+						<elem key="type">rsa</elem>
+						<elem key="bits">2048</elem>
+						<elem key="modulus">B5A61A3F317D4DC9FD6B908220791C7E20DE60D33EF8241047A7C434C395F07DBA19892B49E9D8AFBF14570E741FDC9AA3B2A52C70444DCEB2531116365001E911D9AD33811C791AFA6719D1BC127DAEB7F4BC0AC3CA746D764BFC3B971AED88745C82CF646AEB26A2FBF5F74C9CA5079242B69DAF45A8F438B71105D43ECCAC2C9E9CC07A76313E661C185000C64574082197446F8A108D19EB21BB90B1F6D3A76199FFC24145E27CB344AEFBB04E105E57E9DC6E9B85FBE97292463F3E98478EBF64FF01DA208FA7EF22C8C92C4C478C430A52357308FB6394F13458857B2543B23F8125CD044A99EDDFBDC43B144ED0A89DC03480A0442F24C5700C42FFCB</elem>
+						<elem key="exponent">65537</elem>
+					</table>
+					<table key="extensions">
+						<table>
+							<elem key="name">X509v3 Subject Key Identifier</elem>
+							<elem key="value">AF:92:19:3C:FC:3A:3B:52:03:78:4B:E4:97:2D:89:1F:55:FF:37:27</elem>
+						</table>
+						<table>
+							<elem key="name">X509v3 Authority Key Identifier</elem>
+							<elem key="value">keyid:AF:92:19:3C:FC:3A:3B:52:03:78:4B:E4:97:2D:89:1F:55:FF:37:27&#xa;DirName:/CN=7l3gkxuus397b1i9.myfritz.net&#xa;serial:4A:FC:E8:48:2B:9F:27:30:17:A9:01:60:37:CB:E9:D6:2D:FA:3D:50</elem>
+						</table>
+						<table>
+							<elem key="name">X509v3 Basic Constraints</elem>
+							<elem key="value">CA:TRUE</elem>
+						</table>
+						<table>
+							<elem key="name">X509v3 Subject Alternative Name</elem>
+							<elem key="value">DNS:7l3gkxuus397b1i9.myfritz.net, DNS:fritz.box, DNS:www.fritz.box, DNS:myfritz.box, DNS:www.myfritz.box, DNS:fritz.nas, DNS:www.fritz.nas</elem>
+						</table>
+					</table>
+					<elem key="sig_algo">sha256WithRSAEncryption</elem>
+					<table key="validity">
+						<elem key="notBefore">2022-12-30T15:48:11</elem>
+						<elem key="notAfter">2038-01-15T15:48:11</elem>
+					</table>
+					<elem key="md5">feb04af4dad284553a69a0a2caa7472c</elem>
+					<elem key="sha1">0b08502de61161950ce565039e94354870dc2cea</elem>
+					<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIID7jCCAtagAwIBAgIUSvzoSCufJzAXqQFgN8vp1i36PVAwDQYJKoZIhvcNAQEL&#xa;BQAwJzElMCMGA1UEAxMcN2wzZ2t4dXVzMzk3YjFpOS5teWZyaXR6Lm5ldDAeFw0y&#xa;MjEyMzAxNTQ4MTFaFw0zODAxMTUxNTQ4MTFaMCcxJTAjBgNVBAMTHDdsM2dreHV1&#xa;czM5N2IxaTkubXlmcml0ei5uZXQwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEK&#xa;AoIBAQC1pho/MX1Nyf1rkIIgeRx+IN5g0z74JBBHp8Q0w5XwfboZiStJ6divvxRX&#xa;DnQf3JqjsqUscERNzrJTERY2UAHpEdmtM4EceRr6ZxnRvBJ9rrf0vArDynRtdkv8&#xa;O5ca7Yh0XILPZGrrJqL79fdMnKUHkkK2na9FqPQ4txEF1D7MrCyenMB6djE+ZhwY&#xa;UADGRXQIIZdEb4oQjRnrIbuQsfbTp2GZ/8JBReJ8s0Su+7BOEF5X6dxum4X76XKS&#xa;Rj8+mEeOv2T/Adogj6fvIsjJLExHjEMKUjVzCPtjlPE0WIV7JUOyP4ElzQRKme3f&#xa;vcQ7FE7QqJ3ANICgRC8kxXAMQv/LAgMBAAGjggEQMIIBDDAdBgNVHQ4EFgQUr5IZ&#xa;PPw6O1IDeEvkly2JH1X/NycwYgYDVR0jBFswWYAUr5IZPPw6O1IDeEvkly2JH1X/&#xa;NyehK6QpMCcxJTAjBgNVBAMTHDdsM2dreHV1czM5N2IxaTkubXlmcml0ei5uZXSC&#xa;FEr86EgrnycwF6kBYDfL6dYt+j1QMAwGA1UdEwQFMAMBAf8weQYDVR0RBHIwcIIc&#xa;N2wzZ2t4dXVzMzk3YjFpOS5teWZyaXR6Lm5ldIIJZnJpdHouYm94gg13d3cuZnJp&#xa;dHouYm94ggtteWZyaXR6LmJveIIPd3d3Lm15ZnJpdHouYm94gglmcml0ei5uYXOC&#xa;DXd3dy5mcml0ei5uYXMwDQYJKoZIhvcNAQELBQADggEBAEeD3MxQNOwVcewMPzeA&#xa;z3wNP6MUFJ8U0l5rqw3ZJ7y65ylznEJdgJ9ZoxYcA/7omlwMX8zLCr+DwBTCHhJw&#xa;yJ29Mf0l0efg4PxDlS6vzowTg2k8kqw6guG504NNre0+pYOPcMiEaPHNnx+4H4Bf&#xa;D/rNdaNDKJcJ2E0XdX5T/BiC8wCcGGBNh03bsEmB5uOLmjOU0Qqnm8PvyPqlfEt3&#xa;2k9PCWv9OXvpBVZISjt8erp4uI+yvZktejI/6Z5xfQRcaZCPAtN8UFX86HxOYgEB&#xa;b/2QFBIY7PAXCeKxWw1qO3bWF+PIpftRtd5S4LOa3TN82QzbPx4LQb7SwgJ8aUXS&#xa;QEg=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+				</script>
+			</port>
+			<port protocol="tcp" portid="80">
+				<state state="open" reason="syn-ack" reason_ttl="64"/>
+				<service name="http" product="FRITZ!Box http config" devicetype="broadband router" method="probed" conf="10"/>
+				<script id="http-title" output="FRITZ!Box">
+					<elem key="title">&#xa;FRITZ!Box&#xa;</elem>
+				</script>
+				<script id="http-robots.txt" output="1 disallowed entry &#xa;/"/>
+				<script id="http-favicon" output="FRITZ!Box"/>
+			</port>
+			<port protocol="tcp" portid="443">
+				<state state="open" reason="syn-ack" reason_ttl="64"/>
+				<service name="http" product="FRITZ!Box http config" devicetype="broadband router" tunnel="ssl" method="probed" conf="10"/>
+				<script id="http-title" output="FRITZ!Box">
+					<elem key="title">&#xa;FRITZ!Box&#xa;</elem>
+				</script>
+				<script id="http-favicon" output="FRITZ!Box"/>
+				<script id="http-robots.txt" output="1 disallowed entry &#xa;/"/>
+				<script id="ssl-date" output="TLS randomness does not represent time"></script>
+				<script id="ssl-cert" output="Subject: commonName=7l3gkxuus397b1i9.myfritz.net&#xa;Subject Alternative Name: DNS:7l3gkxuus397b1i9.myfritz.net, DNS:fritz.box, DNS:www.fritz.box, DNS:myfritz.box, DNS:www.myfritz.box, DNS:fritz.nas, DNS:www.fritz.nas&#xa;Not valid before: 2022-12-30T15:48:11&#xa;Not valid after:  2038-01-15T15:48:11">
+					<table key="subject">
+						<elem key="commonName">7l3gkxuus397b1i9.myfritz.net</elem>
+					</table>
+					<table key="issuer">
+						<elem key="commonName">7l3gkxuus397b1i9.myfritz.net</elem>
+					</table>
+					<table key="pubkey">
+						<elem key="type">rsa</elem>
+						<elem key="bits">2048</elem>
+						<elem key="modulus">B5A61A3F317D4DC9FD6B908220791C7E20DE60D33EF8241047A7C434C395F07DBA19892B49E9D8AFBF14570E741FDC9AA3B2A52C70444DCEB2531116365001E911D9AD33811C791AFA6719D1BC127DAEB7F4BC0AC3CA746D764BFC3B971AED88745C82CF646AEB26A2FBF5F74C9CA5079242B69DAF45A8F438B71105D43ECCAC2C9E9CC07A76313E661C185000C64574082197446F8A108D19EB21BB90B1F6D3A76199FFC24145E27CB344AEFBB04E105E57E9DC6E9B85FBE97292463F3E98478EBF64FF01DA208FA7EF22C8C92C4C478C430A52357308FB6394F13458857B2543B23F8125CD044A99EDDFBDC43B144ED0A89DC03480A0442F24C5700C42FFCB</elem>
+						<elem key="exponent">65537</elem>
+					</table>
+					<table key="extensions">
+						<table>
+							<elem key="name">X509v3 Subject Key Identifier</elem>
+							<elem key="value">AF:92:19:3C:FC:3A:3B:52:03:78:4B:E4:97:2D:89:1F:55:FF:37:27</elem>
+						</table>
+						<table>
+							<elem key="name">X509v3 Authority Key Identifier</elem>
+							<elem key="value">keyid:AF:92:19:3C:FC:3A:3B:52:03:78:4B:E4:97:2D:89:1F:55:FF:37:27&#xa;DirName:/CN=7l3gkxuus397b1i9.myfritz.net&#xa;serial:4A:FC:E8:48:2B:9F:27:30:17:A9:01:60:37:CB:E9:D6:2D:FA:3D:50</elem>
+						</table>
+						<table>
+							<elem key="name">X509v3 Basic Constraints</elem>
+							<elem key="value">CA:TRUE</elem>
+						</table>
+						<table>
+							<elem key="name">X509v3 Subject Alternative Name</elem>
+							<elem key="value">DNS:7l3gkxuus397b1i9.myfritz.net, DNS:fritz.box, DNS:www.fritz.box, DNS:myfritz.box, DNS:www.myfritz.box, DNS:fritz.nas, DNS:www.fritz.nas</elem>
+						</table>
+					</table>
+					<elem key="sig_algo">sha256WithRSAEncryption</elem>
+					<table key="validity">
+						<elem key="notBefore">2022-12-30T15:48:11</elem>
+						<elem key="notAfter">2038-01-15T15:48:11</elem>
+					</table>
+					<elem key="md5">feb04af4dad284553a69a0a2caa7472c</elem>
+					<elem key="sha1">0b08502de61161950ce565039e94354870dc2cea</elem>
+					<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIID7jCCAtagAwIBAgIUSvzoSCufJzAXqQFgN8vp1i36PVAwDQYJKoZIhvcNAQEL&#xa;BQAwJzElMCMGA1UEAxMcN2wzZ2t4dXVzMzk3YjFpOS5teWZyaXR6Lm5ldDAeFw0y&#xa;MjEyMzAxNTQ4MTFaFw0zODAxMTUxNTQ4MTFaMCcxJTAjBgNVBAMTHDdsM2dreHV1&#xa;czM5N2IxaTkubXlmcml0ei5uZXQwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEK&#xa;AoIBAQC1pho/MX1Nyf1rkIIgeRx+IN5g0z74JBBHp8Q0w5XwfboZiStJ6divvxRX&#xa;DnQf3JqjsqUscERNzrJTERY2UAHpEdmtM4EceRr6ZxnRvBJ9rrf0vArDynRtdkv8&#xa;O5ca7Yh0XILPZGrrJqL79fdMnKUHkkK2na9FqPQ4txEF1D7MrCyenMB6djE+ZhwY&#xa;UADGRXQIIZdEb4oQjRnrIbuQsfbTp2GZ/8JBReJ8s0Su+7BOEF5X6dxum4X76XKS&#xa;Rj8+mEeOv2T/Adogj6fvIsjJLExHjEMKUjVzCPtjlPE0WIV7JUOyP4ElzQRKme3f&#xa;vcQ7FE7QqJ3ANICgRC8kxXAMQv/LAgMBAAGjggEQMIIBDDAdBgNVHQ4EFgQUr5IZ&#xa;PPw6O1IDeEvkly2JH1X/NycwYgYDVR0jBFswWYAUr5IZPPw6O1IDeEvkly2JH1X/&#xa;NyehK6QpMCcxJTAjBgNVBAMTHDdsM2dreHV1czM5N2IxaTkubXlmcml0ei5uZXSC&#xa;FEr86EgrnycwF6kBYDfL6dYt+j1QMAwGA1UdEwQFMAMBAf8weQYDVR0RBHIwcIIc&#xa;N2wzZ2t4dXVzMzk3YjFpOS5teWZyaXR6Lm5ldIIJZnJpdHouYm94gg13d3cuZnJp&#xa;dHouYm94ggtteWZyaXR6LmJveIIPd3d3Lm15ZnJpdHouYm94gglmcml0ei5uYXOC&#xa;DXd3dy5mcml0ei5uYXMwDQYJKoZIhvcNAQELBQADggEBAEeD3MxQNOwVcewMPzeA&#xa;z3wNP6MUFJ8U0l5rqw3ZJ7y65ylznEJdgJ9ZoxYcA/7omlwMX8zLCr+DwBTCHhJw&#xa;yJ29Mf0l0efg4PxDlS6vzowTg2k8kqw6guG504NNre0+pYOPcMiEaPHNnx+4H4Bf&#xa;D/rNdaNDKJcJ2E0XdX5T/BiC8wCcGGBNh03bsEmB5uOLmjOU0Qqnm8PvyPqlfEt3&#xa;2k9PCWv9OXvpBVZISjt8erp4uI+yvZktejI/6Z5xfQRcaZCPAtN8UFX86HxOYgEB&#xa;b/2QFBIY7PAXCeKxWw1qO3bWF+PIpftRtd5S4LOa3TN82QzbPx4LQb7SwgJ8aUXS&#xa;QEg=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+				</script>
+			</port>
+		</ports>
+		<os>
+			<portused state="open" proto="tcp" portid="21"/>
+			<portused state="closed" proto="udp" portid="38793"/>
+			<osmatch name="Linux 3.2 - 4.9" accuracy="100" line="65314">
+				<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="100">
+					<cpe>cpe:/o:linux:linux_kernel:3</cpe>
+				</osclass>
+				<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="100">
+					<cpe>cpe:/o:linux:linux_kernel:4</cpe>
+				</osclass>
+			</osmatch>
+		</os>
+		<uptime seconds="751688" lastboot="Thu Mar  2 22:49:41 2023"/>
+		<distance value="1"/>
+		<tcpsequence index="256" difficulty="Good luck!" values="128A613E,5F618797,E5A32B3,906F5815,1AE55FC0,DEAC77BF"/>
+		<ipidsequence class="All zeros" values="0,0,0,0,0,0"/>
+		<tcptssequence class="other" values="B33688B,B3368A6,B3368C1,B3368DD,B3368F8,B336913"/>
+		<times srtt="569" rttvar="564" to="100000"/>
+	</host>
+	<hosthint>
+		<status state="up" reason="unknown-response" reason_ttl="0"/>
+		<address addr="216.58.215.238" addrtype="ipv4"/>
+		<hostnames>
+			<hostname name="google.com" type="user"/>
+		</hostnames>
+	</hosthint>
+	<host starttime="1678545475" endtime="1678545475">
+		<status state="up" reason="localhost-response" reason_ttl="0"/>
+		<address addr="192.168.1.32" addrtype="ipv4"/>
+		<hostnames>
+			<hostname name="cr0.fritz.box" type="PTR"/>
+		</hostnames>
+		<ports>
+			<port protocol="tcp" portid="21">
+				<state state="closed" reason="reset" reason_ttl="128"/>
+				<service name="ftp" method="table" conf="3"/>
+			</port>
+			<port protocol="tcp" portid="80">
+				<state state="closed" reason="reset" reason_ttl="128"/>
+				<service name="http" method="table" conf="3"/>
+			</port>
+			<port protocol="tcp" portid="443">
+				<state state="closed" reason="reset" reason_ttl="128"/>
+				<service name="https" method="table" conf="3"/>
+			</port>
+		</ports>
+		<os>
+			<portused state="closed" proto="tcp" portid="21"/>
+			<portused state="closed" proto="udp" portid="42330"/>
+		</os>
+		<distance value="0"/>
+		<times srtt="700" rttvar="965" to="100000"/>
+	</host>
+	<host starttime="1678545475" endtime="1678545555">
+		<status state="up" reason="syn-ack" reason_ttl="60"/>
+		<address addr="216.58.215.238" addrtype="ipv4"/>
+		<hostnames>
+			<hostname name="google.com" type="user"/>
+			<hostname name="zrh11s02-in-f14.1e100.net" type="PTR"/>
+		</hostnames>
+		<ports>
+			<port protocol="tcp" portid="21">
+				<state state="filtered" reason="no-response" reason_ttl="0"/>
+				<service name="ftp" method="table" conf="3"/>
+			</port>
+			<port protocol="tcp" portid="80">
+				<state state="open" reason="syn-ack" reason_ttl="52"/>
+				<service name="http" product="gws" servicefp="SF-Port80-TCP:V=7.93%I=7%D=3/11%Time=640C924B%P=i686-pc-windows-windows%r(GetRequest,5B3A,&quot;HTTP/1\.0\x20200\x20OK\r\nDate:\x20Sat,\x2011\x20Mar\x202023\x2014:38:05\x20GMT\r\nExpires:\x20-1\r\nCache-Control:\x20private,\x20max-age=0\r\nContent-Type:\x20text/html;\x20charset=ISO-8859-1\r\nServer:\x20gws\r\nX-XSS-Protection:\x200\r\nX-Frame-Options:\x20SAMEORIGIN\r\nSet-Cookie:\x20AEC=ARSKqsJyrJa2bQ-txTCkIFbaVK250BafQX-hl5XONxln3ys72Fydsl8VtO8;\x20expires=Thu,\x2007-Sep-2023\x2014:38:05\x20GMT;\x20path=/;\x20domain=\.google\.com;\x20Secure;\x20HttpOnly;\x20SameSite=lax\r\n\r\n&lt;!doctype\x20html&gt;&lt;html\x20itemscope=\&quot;\&quot;\x20itemtype=\&quot;http://schema\.org/WebPage\&quot;\x20lang=\&quot;de-CH\&quot;&gt;&lt;head&gt;&lt;meta\x20content=\&quot;text/html;\x20charset=UTF-8\&quot;\x20http-equiv=\&quot;Content-Type\&quot;&gt;&lt;meta\x20content=\&quot;/images/branding/googleg/1x/googleg_standard_color_128dp\.png\&quot;\x20itemprop=\&quot;image\&quot;&gt;&lt;title&gt;Google&lt;/title&gt;&lt;script\x20nonce=\&quot;6SQex0wsQtMtUKnJvZzl1Q\&quot;&gt;\(function\(\){window\.google={kEI:&apos;TZIMZN6_KdC_xc8PguyEgAQ&apos;,kEXPI:&apos;0,1359409,6058,207,4804,2316,383,246,5,1129120,1578491,16114,28684,22431,1361,283,12030,2821,14765,4998,13228,3847,41316,2891,3926,7828,6&quot;)%r(HTTPOptions,70F,&quot;HTTP/1\.0\x20405\x20Method\x20Not\x20Allowed\r\nAllow:\x20GET,\x20HEAD\r\nDate:\x20Sat,\x2011\x20Mar\x202023\x2014:38:05\x20GMT\r\nContent-Type:\x20text/html;\x20charset=UTF-8\r\nServer:\x20gws\r\nContent-Length:\x201592\r\nX-XSS-Protection:\x200\r\nX-Frame-Options:\x20SAMEORIGIN\r\n\r\n&lt;!DOCTYPE\x20html&gt;\n&lt;html\x20lang=en&gt;\n\x20\x20&lt;meta\x20charset=utf-8&gt;\n\x20\x20&lt;meta\x20name=viewport\x20content=\&quot;initial-scale=1,\x20minimum-scale=1,\x20width=device-width\&quot;&gt;\n\x20\x20&lt;title&gt;Error\x20405\x20\(Method\x20Not\x20Allowed\)!!1&lt;/title&gt;\n\x20\x20&lt;style&gt;\n\x20\x20\x20\x20\*{margin:0;padding:0}html,code{font:15px/22px\x20arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7%\x20auto\x200;max-width:390px;min-height:180px;padding:30px\x200\x2015px}\*\x20&gt;\x20body{background:url\(//www\.google\.com/images/errors/robot\.png\)\x20100%\x205px\x20no-repeat;padding-right:205px}p{margin:11px\x200\x2022px;overflow:hidden}ins{color:#777;text-decoration:none}a\x20img{border:0}@media\x20screen\x20and\x20\(max-width:772px\){body{background:none;margin-top:0;max-width:none;padding-right:0}}#l&quot;);" method="probed" conf="10"/>
+				<script id="http-server-header" output="gws">
+					<elem>gws</elem>
+				</script>
+				<script id="fingerprint-strings" output="&#xa;  GetRequest: &#xa;    HTTP/1.0 200 OK&#xa;    Date: Sat, 11 Mar 2023 14:38:05 GMT&#xa;    Expires: -1&#xa;    Cache-Control: private, max-age=0&#xa;    Content-Type: text/html; charset=ISO-8859-1&#xa;    Server: gws&#xa;    X-XSS-Protection: 0&#xa;    X-Frame-Options: SAMEORIGIN&#xa;    Set-Cookie: AEC=ARSKqsJyrJa2bQ-txTCkIFbaVK250BafQX-hl5XONxln3ys72Fydsl8VtO8; expires=Thu, 07-Sep-2023 14:38:05 GMT; path=/; domain=.google.com; Secure; HttpOnly; SameSite=lax&#xa;    &lt;!doctype html&gt;&lt;html itemscope=&quot;&quot; itemtype=&quot;http://schema.org/WebPage&quot; lang=&quot;de-CH&quot;&gt;&lt;head&gt;&lt;meta content=&quot;text/html; charset=UTF-8&quot; http-equiv=&quot;Content-Type&quot;&gt;&lt;meta content=&quot;/images/branding/googleg/1x/googleg_standard_color_128dp.png&quot; itemprop=&quot;image&quot;&gt;&lt;title&gt;Google&lt;/title&gt;&lt;script nonce=&quot;6SQex0wsQtMtUKnJvZzl1Q&quot;&gt;(function(){window.google={kEI:&apos;TZIMZN6_KdC_xc8PguyEgAQ&apos;,kEXPI:&apos;0,1359409,6058,207,4804,2316,383,246,5,1129120,1578491,16114,28684,22431,1361,283,12030,2821,14765,4998,13228,3847,41316,2891,3926,7828,6&#xa;  HTTPOptions: &#xa;    HTTP/1.0 405 Method Not Allowed&#xa;    Allow: GET, HEAD&#xa;    Date: Sat, 11 Mar 2023 14:38:05 GMT&#xa;    Content-Type: text/html; charset=UTF-8&#xa;    Server: gws&#xa;    Content-Length: 1592&#xa;    X-XSS-Protection: 0&#xa;    X-Frame-Options: SAMEORIGIN&#xa;    &lt;!DOCTYPE html&gt;&#xa;    &lt;html lang=en&gt;&#xa;    &lt;meta charset=utf-8&gt;&#xa;    &lt;meta name=viewport content=&quot;initial-scale=1, minimum-scale=1, width=device-width&quot;&gt;&#xa;    &lt;title&gt;Error 405 (Method Not Allowed)!!1&lt;/title&gt;&#xa;    &lt;style&gt;&#xa;    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* &gt; body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#l">
+					<elem key="GetRequest">&#xa;    HTTP/1.0 200 OK&#xa;    Date: Sat, 11 Mar 2023 14:38:05 GMT&#xa;    Expires: -1&#xa;    Cache-Control: private, max-age=0&#xa;    Content-Type: text/html; charset=ISO-8859-1&#xa;    Server: gws&#xa;    X-XSS-Protection: 0&#xa;    X-Frame-Options: SAMEORIGIN&#xa;    Set-Cookie: AEC=ARSKqsJyrJa2bQ-txTCkIFbaVK250BafQX-hl5XONxln3ys72Fydsl8VtO8; expires=Thu, 07-Sep-2023 14:38:05 GMT; path=/; domain=.google.com; Secure; HttpOnly; SameSite=lax&#xa;    &lt;!doctype html&gt;&lt;html itemscope=&quot;&quot; itemtype=&quot;http://schema.org/WebPage&quot; lang=&quot;de-CH&quot;&gt;&lt;head&gt;&lt;meta content=&quot;text/html; charset=UTF-8&quot; http-equiv=&quot;Content-Type&quot;&gt;&lt;meta content=&quot;/images/branding/googleg/1x/googleg_standard_color_128dp.png&quot; itemprop=&quot;image&quot;&gt;&lt;title&gt;Google&lt;/title&gt;&lt;script nonce=&quot;6SQex0wsQtMtUKnJvZzl1Q&quot;&gt;(function(){window.google={kEI:&apos;TZIMZN6_KdC_xc8PguyEgAQ&apos;,kEXPI:&apos;0,1359409,6058,207,4804,2316,383,246,5,1129120,1578491,16114,28684,22431,1361,283,12030,2821,14765,4998,13228,3847,41316,2891,3926,7828,6</elem>
+					<elem key="HTTPOptions">&#xa;    HTTP/1.0 405 Method Not Allowed&#xa;    Allow: GET, HEAD&#xa;    Date: Sat, 11 Mar 2023 14:38:05 GMT&#xa;    Content-Type: text/html; charset=UTF-8&#xa;    Server: gws&#xa;    Content-Length: 1592&#xa;    X-XSS-Protection: 0&#xa;    X-Frame-Options: SAMEORIGIN&#xa;    &lt;!DOCTYPE html&gt;&#xa;    &lt;html lang=en&gt;&#xa;    &lt;meta charset=utf-8&gt;&#xa;    &lt;meta name=viewport content=&quot;initial-scale=1, minimum-scale=1, width=device-width&quot;&gt;&#xa;    &lt;title&gt;Error 405 (Method Not Allowed)!!1&lt;/title&gt;&#xa;    &lt;style&gt;&#xa;    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* &gt; body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#l</elem>
+				</script>
+				<script id="http-title" output="Did not follow redirect to http://www.google.com/">
+					<elem key="redirect_url">http://www.google.com/</elem>
+				</script>
+			</port>
+			<port protocol="tcp" portid="443">
+				<state state="open" reason="syn-ack" reason_ttl="60"/>
+				<service name="https" product="gws" servicefp="SF-Port443-TCP:V=7.93%T=SSL%I=7%D=3/11%Time=640C9251%P=i686-pc-windows-windows%r(GetRequest,7CED,&quot;HTTP/1\.0\x20200\x20OK\r\nDate:\x20Sat,\x2011\x20Mar\x202023\x2014:38:11\x20GMT\r\nExpires:\x20-1\r\nCache-Control:\x20private,\x20max-age=0\r\nContent-Type:\x20text/html;\x20charset=ISO-8859-1\r\nP3P:\x20CP=\&quot;This\x20is\x20not\x20a\x20P3P\x20policy!\x20See\x20g\.co/p3phelp\x20for\x20more\x20info\.\&quot;\r\nServer:\x20gws\r\nX-XSS-Protection:\x200\r\nX-Frame-Options:\x20SAMEORIGIN\r\nSet-Cookie:\x20SOCS=CAAaBgiAia-gBg;\x20expires=Tue,\x2009-Apr-2024\x2014:38:11\x20GMT;\x20path=/;\x20domain=\.google\.com;\x20Secure;\x20SameSite=lax\r\nSet-Cookie:\x20AEC=ARSKqsL_kNTsRMr8fzltJ_urBXC4xFjMGmqn56o0CVh3JaAag5P-Npzmo_g;\x20expires=Thu,\x2007-Sep-2023\x2014:38:11\x20GMT;\x20path=/;\x20domain=\.google\.com;\x20Secure;\x20HttpOnly;\x20SameSite=lax\r\nSet-Cookie:\x20__Secure-ENID=10\.SE=AsRUyjzxrMAmUZVDWAZXEKsUGf4Ms73l90Oa9LuPyicoTedlK7lFusIz1rC6mWhnIPHFvhXMiUDcS8gCtR-jQQTDsLtkgDgMLtAiPGWjp2YDkzyB4Su4GTVqe-EM4LobHCbCczPLOV2JXbKbIKayFVwQ-3JcGBpsTcAJ_3PuHP0;\x20expires=Wed,\x2010-Apr-2024\x2006:56:29\x20GMT;\x20path=/;\x20domain=\.google\.com;\x20Secure;\x20HttpOnly;\x20SameSite=lax\r\nSet-Cookie:\x20CONSENT&quot;)%r(HTTPOptions,748,&quot;HTTP/1\.0\x20405\x20Method\x20Not\x20Allowed\r\nAllow:\x20GET,\x20HEAD\r\nDate:\x20Sat,\x2011\x20Mar\x202023\x2014:38:12\x20GMT\r\nContent-Type:\x20text/html;\x20charset=UTF-8\r\nServer:\x20gws\r\nContent-Length:\x201592\r\nX-XSS-Protection:\x200\r\nX-Frame-Options:\x20SAMEORIGIN\r\nAlt-Svc:\x20h3=\&quot;:443\&quot;;\x20ma=2592000,h3-29=\&quot;:443\&quot;;\x20ma=2592000\r\n\r\n&lt;!DOCTYPE\x20html&gt;\n&lt;html\x20lang=en&gt;\n\x20\x20&lt;meta\x20charset=utf-8&gt;\n\x20\x20&lt;meta\x20name=viewport\x20content=\&quot;initial-scale=1,\x20minimum-scale=1,\x20width=device-width\&quot;&gt;\n\x20\x20&lt;title&gt;Error\x20405\x20\(Method\x20Not\x20Allowed\)!!1&lt;/title&gt;\n\x20\x20&lt;style&gt;\n\x20\x20\x20\x20\*{margin:0;padding:0}html,code{font:15px/22px\x20arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7%\x20auto\x200;max-width:390px;min-height:180px;padding:30px\x200\x2015px}\*\x20&gt;\x20body{background:url\(//www\.google\.com/images/errors/robot\.png\)\x20100%\x205px\x20no-repeat;padding-right:205px}p{margin:11px\x200\x2022px;overflow:hidden}ins{color:#777;text-decoration:none}a\x20img{border:0}@media\x20screen\x20and\x20\(max-width:772px\){body{backgr&quot;);" tunnel="ssl" method="probed" conf="10"/>
+				<script id="tls-alpn" output="&#xa;  grpc-exp&#xa;  h2&#xa;  http/1.1">
+					<elem>grpc-exp</elem>
+					<elem>h2</elem>
+					<elem>http/1.1</elem>
+				</script>
+				<script id="ssl-date" output="TLS randomness does not represent time"></script>
+				<script id="http-server-header" output="gws">
+					<elem>gws</elem>
+				</script>
+				<script id="ssl-cert" output="Subject: commonName=*.google.com&#xa;Subject Alternative Name: DNS:*.google.com, DNS:*.appengine.google.com, DNS:*.bdn.dev, DNS:*.origin-test.bdn.dev, DNS:*.cloud.google.com, DNS:*.crowdsource.google.com, DNS:*.datacompute.google.com, DNS:*.google.ca, DNS:*.google.cl, DNS:*.google.co.in, DNS:*.google.co.jp, DNS:*.google.co.uk, DNS:*.google.com.ar, DNS:*.google.com.au, DNS:*.google.com.br, DNS:*.google.com.co, DNS:*.google.com.mx, DNS:*.google.com.tr, DNS:*.google.com.vn, DNS:*.google.de, DNS:*.google.es, DNS:*.google.fr, DNS:*.google.hu, DNS:*.google.it, DNS:*.google.nl, DNS:*.google.pl, DNS:*.google.pt, DNS:*.googleadapis.com, DNS:*.googleapis.cn, DNS:*.googlevideo.com, DNS:*.gstatic.cn, DNS:*.gstatic-cn.com, DNS:googlecnapps.cn, DNS:*.googlecnapps.cn, DNS:googleapps-cn.com, DNS:*.googleapps-cn.com, DNS:gkecnapps.cn, DNS:*.gkecnapps.cn, DNS:googledownloads.cn, DNS:*.googledownloads.cn, DNS:recaptcha.net.cn, DNS:*.recaptcha.net.cn, DNS:recaptcha-cn.net, DNS:*.recaptcha-cn.net, DNS:widevine.cn, DNS:*.widevine.cn, DNS:ampproject.org.cn, DNS:*.ampproject.org.cn, DNS:ampproject.net.cn, DNS:*.ampproject.net.cn, DNS:google-analytics-cn.com, DNS:*.google-analytics-cn.com, DNS:googleadservices-cn.com, DNS:*.googleadservices-cn.com, DNS:googlevads-cn.com, DNS:*.googlevads-cn.com, DNS:googleapis-cn.com, DNS:*.googleapis-cn.com, DNS:googleoptimize-cn.com, DNS:*.googleoptimize-cn.com, DNS:doubleclick-cn.net, DNS:*.doubleclick-cn.net, DNS:*.fls.doubleclick-cn.net, DNS:*.g.doubleclick-cn.net, DNS:doubleclick.cn, DNS:*.doubleclick.cn, DNS:*.fls.doubleclick.cn, DNS:*.g.doubleclick.cn, DNS:dartsearch-cn.net, DNS:*.dartsearch-cn.net, DNS:googletraveladservices-cn.com, DNS:*.googletraveladservices-cn.com, DNS:googletagservices-cn.com, DNS:*.googletagservices-cn.com, DNS:googletagmanager-cn.com, DNS:*.googletagmanager-cn.com, DNS:googlesyndication-cn.com, DNS:*.googlesyndication-cn.com, DNS:*.safeframe.googlesyndication-cn.com, DNS:app-measurement-cn.com, DNS:*.app-measurement-cn.com, DNS:gvt1-cn.com, DNS:*.gvt1-cn.com, DNS:gvt2-cn.com, DNS:*.gvt2-cn.com, DNS:2mdn-cn.net, DNS:*.2mdn-cn.net, DNS:googleflights-cn.net, DNS:*.googleflights-cn.net, DNS:admob-cn.com, DNS:*.admob-cn.com, DNS:googlesandbox-cn.com, DNS:*.googlesandbox-cn.com, DNS:*.safenup.googlesandbox-cn.com, DNS:*.gstatic.com, DNS:*.metric.gstatic.com, DNS:*.gvt1.com, DNS:*.gcpcdn.gvt1.com, DNS:*.gvt2.com, DNS:*.gcp.gvt2.com, DNS:*.url.google.com, DNS:*.youtube-nocookie.com, DNS:*.ytimg.com, DNS:android.com, DNS:*.android.com, DNS:*.flash.android.com, DNS:g.cn, DNS:*.g.cn, DNS:g.co, DNS:*.g.co, DNS:goo.gl, DNS:www.goo.gl, DNS:google-analytics.com, DNS:*.google-analytics.com, DNS:google.com, DNS:googlecommerce.com, DNS:*.googlecommerce.com, DNS:ggpht.cn, DNS:*.ggpht.cn, DNS:urchin.com, DNS:*.urchin.com, DNS:youtu.be, DNS:youtube.com, DNS:*.youtube.com, DNS:youtubeeducation.com, DNS:*.youtubeeducation.com, DNS:youtubekids.com, DNS:*.youtubekids.com, DNS:yt.be, DNS:*.yt.be, DNS:android.clients.google.com, DNS:developer.android.google.cn, DNS:developers.android.google.cn, DNS:source.android.google.cn&#xa;Not valid before: 2023-02-20T09:13:15&#xa;Not valid after:  2023-05-15T09:13:14">
+					<table key="subject">
+						<elem key="commonName">*.google.com</elem>
+					</table>
+					<table key="issuer">
+						<elem key="commonName">GTS CA 1C3</elem>
+						<elem key="countryName">US</elem>
+						<elem key="organizationName">Google Trust Services LLC</elem>
+					</table>
+					<table key="pubkey">
+						<elem key="type">ec</elem>
+						<elem key="bits">256</elem>
+						<table key="ecdhparams">
+							<table key="curve_params">
+								<elem key="ec_curve_type">namedcurve</elem>
+								<elem key="curve">prime256v1</elem>
+							</table>
+						</table>
+					</table>
+					<table key="extensions">
+						<table>
+							<elem key="name">X509v3 Key Usage</elem>
+							<elem key="value">Digital Signature</elem>
+							<elem key="critical">true</elem>
+						</table>
+						<table>
+							<elem key="name">X509v3 Extended Key Usage</elem>
+							<elem key="value">TLS Web Server Authentication</elem>
+						</table>
+						<table>
+							<elem key="name">X509v3 Basic Constraints</elem>
+							<elem key="value">CA:FALSE</elem>
+							<elem key="critical">true</elem>
+						</table>
+						<table>
+							<elem key="name">X509v3 Subject Key Identifier</elem>
+							<elem key="value">2F:B6:EA:40:E9:E5:8E:8A:42:80:B2:67:8D:B4:CB:0E:40:18:1D:83</elem>
+						</table>
+						<table>
+							<elem key="name">X509v3 Authority Key Identifier</elem>
+							<elem key="value">8A:74:7F:AF:85:CD:EE:95:CD:3D:9C:D0:E2:46:14:F3:71:35:1D:27</elem>
+						</table>
+						<table>
+							<elem key="name">Authority Information Access</elem>
+							<elem key="value">OCSP - URI:http://ocsp.pki.goog/gts1c3&#xa;CA Issuers - URI:http://pki.goog/repo/certs/gts1c3.der</elem>
+						</table>
+						<table>
+							<elem key="name">X509v3 Subject Alternative Name</elem>
+							<elem key="value">DNS:*.google.com, DNS:*.appengine.google.com, DNS:*.bdn.dev, DNS:*.origin-test.bdn.dev, DNS:*.cloud.google.com, DNS:*.crowdsource.google.com, DNS:*.datacompute.google.com, DNS:*.google.ca, DNS:*.google.cl, DNS:*.google.co.in, DNS:*.google.co.jp, DNS:*.google.co.uk, DNS:*.google.com.ar, DNS:*.google.com.au, DNS:*.google.com.br, DNS:*.google.com.co, DNS:*.google.com.mx, DNS:*.google.com.tr, DNS:*.google.com.vn, DNS:*.google.de, DNS:*.google.es, DNS:*.google.fr, DNS:*.google.hu, DNS:*.google.it, DNS:*.google.nl, DNS:*.google.pl, DNS:*.google.pt, DNS:*.googleadapis.com, DNS:*.googleapis.cn, DNS:*.googlevideo.com, DNS:*.gstatic.cn, DNS:*.gstatic-cn.com, DNS:googlecnapps.cn, DNS:*.googlecnapps.cn, DNS:googleapps-cn.com, DNS:*.googleapps-cn.com, DNS:gkecnapps.cn, DNS:*.gkecnapps.cn, DNS:googledownloads.cn, DNS:*.googledownloads.cn, DNS:recaptcha.net.cn, DNS:*.recaptcha.net.cn, DNS:recaptcha-cn.net, DNS:*.recaptcha-cn.net, DNS:widevine.cn, DNS:*.widevine.cn, DNS:ampproject.org.cn, DNS:*.ampproject.org.cn, DNS:ampproject.net.cn, DNS:*.ampproject.net.cn, DNS:google-analytics-cn.com, DNS:*.google-analytics-cn.com, DNS:googleadservices-cn.com, DNS:*.googleadservices-cn.com, DNS:googlevads-cn.com, DNS:*.googlevads-cn.com, DNS:googleapis-cn.com, DNS:*.googleapis-cn.com, DNS:googleoptimize-cn.com, DNS:*.googleoptimize-cn.com, DNS:doubleclick-cn.net, DNS:*.doubleclick-cn.net, DNS:*.fls.doubleclick-cn.net, DNS:*.g.doubleclick-cn.net, DNS:doubleclick.cn, DNS:*.doubleclick.cn, DNS:*.fls.doubleclick.cn, DNS:*.g.doubleclick.cn, DNS:dartsearch-cn.net, DNS:*.dartsearch-cn.net, DNS:googletraveladservices-cn.com, DNS:*.googletraveladservices-cn.com, DNS:googletagservices-cn.com, DNS:*.googletagservices-cn.com, DNS:googletagmanager-cn.com, DNS:*.googletagmanager-cn.com, DNS:googlesyndication-cn.com, DNS:*.googlesyndication-cn.com, DNS:*.safeframe.googlesyndication-cn.com, DNS:app-measurement-cn.com, DNS:*.app-measurement-cn.com, DNS:gvt1-cn.com, DNS:*.gvt1-cn.com, DNS:gvt2-cn.com, DNS:*.gvt2-cn.com, DNS:2mdn-cn.net, DNS:*.2mdn-cn.net, DNS:googleflights-cn.net, DNS:*.googleflights-cn.net, DNS:admob-cn.com, DNS:*.admob-cn.com, DNS:googlesandbox-cn.com, DNS:*.googlesandbox-cn.com, DNS:*.safenup.googlesandbox-cn.com, DNS:*.gstatic.com, DNS:*.metric.gstatic.com, DNS:*.gvt1.com, DNS:*.gcpcdn.gvt1.com, DNS:*.gvt2.com, DNS:*.gcp.gvt2.com, DNS:*.url.google.com, DNS:*.youtube-nocookie.com, DNS:*.ytimg.com, DNS:android.com, DNS:*.android.com, DNS:*.flash.android.com, DNS:g.cn, DNS:*.g.cn, DNS:g.co, DNS:*.g.co, DNS:goo.gl, DNS:www.goo.gl, DNS:google-analytics.com, DNS:*.google-analytics.com, DNS:google.com, DNS:googlecommerce.com, DNS:*.googlecommerce.com, DNS:ggpht.cn, DNS:*.ggpht.cn, DNS:urchin.com, DNS:*.urchin.com, DNS:youtu.be, DNS:youtube.com, DNS:*.youtube.com, DNS:youtubeeducation.com, DNS:*.youtubeeducation.com, DNS:youtubekids.com, DNS:*.youtubekids.com, DNS:yt.be, DNS:*.yt.be, DNS:android.clients.google.com, DNS:developer.android.google.cn, DNS:developers.android.google.cn, DNS:source.android.google.cn</elem>
+						</table>
+						<table>
+							<elem key="name">X509v3 Certificate Policies</elem>
+							<elem key="value">Policy: 2.23.140.1.2.1&#xa;Policy: 1.3.6.1.4.1.11129.2.5.3</elem>
+						</table>
+						<table>
+							<elem key="name">X509v3 CRL Distribution Points</elem>
+							<elem key="value">Full Name:&#xa;  URI:http://crls.pki.goog/gts1c3/zdATt0Ex_Fk.crl</elem>
+						</table>
+						<table>
+							<elem key="name">CT Precertificate SCTs</elem>
+							<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : B3:73:77:07:E1:84:50:F8:63:86:D6:05:A9:DC:11:09:&#xa;                4A:79:2D:B1:67:0C:0B:87:DC:F0:03:0E:79:36:A5:9A&#xa;    Timestamp : Feb 20 10:13:59.624 2023 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:20:00:A1:64:F6:C5:CE:4B:06:7B:E0:D9:F8:&#xa;                AF:E2:CC:6F:55:C4:84:8D:AD:8D:CD:C0:0C:94:42:74:&#xa;                DF:D6:76:09:02:21:00:C4:02:CC:00:46:92:FE:42:46:&#xa;                81:7E:12:72:CB:50:6B:C4:66:46:FB:62:31:D8:81:FA:&#xa;                14:A6:0B:59:95:69:86&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : AD:F7:BE:FA:7C:FF:10:C8:8B:9D:3D:9C:1E:3E:18:6A:&#xa;                B4:67:29:5D:CF:B1:0C:24:CA:85:86:34:EB:DC:82:8A&#xa;    Timestamp : Feb 20 10:13:59.624 2023 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:20:68:15:C1:3F:37:09:57:19:FE:0E:0B:81:&#xa;                1C:44:FD:AE:A3:F0:57:F8:E3:60:74:52:08:37:D5:66:&#xa;                C2:C4:30:62:02:21:00:9E:D5:AD:11:AB:57:A5:39:89:&#xa;                A2:99:FD:C1:0D:DC:0F:1F:A1:5C:6D:27:80:DD:41:59:&#xa;                AA:DC:36:38:F8:52:73</elem>
+						</table>
+					</table>
+					<elem key="sig_algo">sha256WithRSAEncryption</elem>
+					<table key="validity">
+						<elem key="notBefore">2023-02-20T09:13:15</elem>
+						<elem key="notAfter">2023-05-15T09:13:14</elem>
+					</table>
+					<elem key="md5">0910c66fca935c80b9614a226590b47f</elem>
+					<elem key="sha1">4dc712a97fa5ba17a78a2352ccc84f1d041b2078</elem>
+					<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIOOzCCDSOgAwIBAgIQcykDwrxnmlwKpO8sLjVYmzANBgkqhkiG9w0BAQsFADBG&#xa;MQswCQYDVQQGEwJVUzEiMCAGA1UEChMZR29vZ2xlIFRydXN0IFNlcnZpY2VzIExM&#xa;QzETMBEGA1UEAxMKR1RTIENBIDFDMzAeFw0yMzAyMjAwOTEzMTVaFw0yMzA1MTUw&#xa;OTEzMTRaMBcxFTATBgNVBAMMDCouZ29vZ2xlLmNvbTBZMBMGByqGSM49AgEGCCqG&#xa;SM49AwEHA0IABK436cNYwXLBOrXVWtK4Ix/HU5BZHkQinvTJZy9LK0z7CEA8tjrk&#xa;3oaJMGNbLHt3cBqHekXhMx7k6624g2XUWFCjggwdMIIMGTAOBgNVHQ8BAf8EBAMC&#xa;B4AwEwYDVR0lBAwwCgYIKwYBBQUHAwEwDAYDVR0TAQH/BAIwADAdBgNVHQ4EFgQU&#xa;L7bqQOnljopCgLJnjbTLDkAYHYMwHwYDVR0jBBgwFoAUinR/r4XN7pXNPZzQ4kYU&#xa;83E1HScwagYIKwYBBQUHAQEEXjBcMCcGCCsGAQUFBzABhhtodHRwOi8vb2NzcC5w&#xa;a2kuZ29vZy9ndHMxYzMwMQYIKwYBBQUHMAKGJWh0dHA6Ly9wa2kuZ29vZy9yZXBv&#xa;L2NlcnRzL2d0czFjMy5kZXIwggnNBgNVHREEggnEMIIJwIIMKi5nb29nbGUuY29t&#xa;ghYqLmFwcGVuZ2luZS5nb29nbGUuY29tggkqLmJkbi5kZXaCFSoub3JpZ2luLXRl&#xa;c3QuYmRuLmRldoISKi5jbG91ZC5nb29nbGUuY29tghgqLmNyb3dkc291cmNlLmdv&#xa;b2dsZS5jb22CGCouZGF0YWNvbXB1dGUuZ29vZ2xlLmNvbYILKi5nb29nbGUuY2GC&#xa;CyouZ29vZ2xlLmNsgg4qLmdvb2dsZS5jby5pboIOKi5nb29nbGUuY28uanCCDiou&#xa;Z29vZ2xlLmNvLnVrgg8qLmdvb2dsZS5jb20uYXKCDyouZ29vZ2xlLmNvbS5hdYIP&#xa;Ki5nb29nbGUuY29tLmJygg8qLmdvb2dsZS5jb20uY2+CDyouZ29vZ2xlLmNvbS5t&#xa;eIIPKi5nb29nbGUuY29tLnRygg8qLmdvb2dsZS5jb20udm6CCyouZ29vZ2xlLmRl&#xa;ggsqLmdvb2dsZS5lc4ILKi5nb29nbGUuZnKCCyouZ29vZ2xlLmh1ggsqLmdvb2ds&#xa;ZS5pdIILKi5nb29nbGUubmyCCyouZ29vZ2xlLnBsggsqLmdvb2dsZS5wdIISKi5n&#xa;b29nbGVhZGFwaXMuY29tgg8qLmdvb2dsZWFwaXMuY26CESouZ29vZ2xldmlkZW8u&#xa;Y29tggwqLmdzdGF0aWMuY26CECouZ3N0YXRpYy1jbi5jb22CD2dvb2dsZWNuYXBw&#xa;cy5jboIRKi5nb29nbGVjbmFwcHMuY26CEWdvb2dsZWFwcHMtY24uY29tghMqLmdv&#xa;b2dsZWFwcHMtY24uY29tggxna2VjbmFwcHMuY26CDiouZ2tlY25hcHBzLmNughJn&#xa;b29nbGVkb3dubG9hZHMuY26CFCouZ29vZ2xlZG93bmxvYWRzLmNughByZWNhcHRj&#xa;aGEubmV0LmNughIqLnJlY2FwdGNoYS5uZXQuY26CEHJlY2FwdGNoYS1jbi5uZXSC&#xa;EioucmVjYXB0Y2hhLWNuLm5ldIILd2lkZXZpbmUuY26CDSoud2lkZXZpbmUuY26C&#xa;EWFtcHByb2plY3Qub3JnLmNughMqLmFtcHByb2plY3Qub3JnLmNughFhbXBwcm9q&#xa;ZWN0Lm5ldC5jboITKi5hbXBwcm9qZWN0Lm5ldC5jboIXZ29vZ2xlLWFuYWx5dGlj&#xa;cy1jbi5jb22CGSouZ29vZ2xlLWFuYWx5dGljcy1jbi5jb22CF2dvb2dsZWFkc2Vy&#xa;dmljZXMtY24uY29tghkqLmdvb2dsZWFkc2VydmljZXMtY24uY29tghFnb29nbGV2&#xa;YWRzLWNuLmNvbYITKi5nb29nbGV2YWRzLWNuLmNvbYIRZ29vZ2xlYXBpcy1jbi5j&#xa;b22CEyouZ29vZ2xlYXBpcy1jbi5jb22CFWdvb2dsZW9wdGltaXplLWNuLmNvbYIX&#xa;Ki5nb29nbGVvcHRpbWl6ZS1jbi5jb22CEmRvdWJsZWNsaWNrLWNuLm5ldIIUKi5k&#xa;b3VibGVjbGljay1jbi5uZXSCGCouZmxzLmRvdWJsZWNsaWNrLWNuLm5ldIIWKi5n&#xa;LmRvdWJsZWNsaWNrLWNuLm5ldIIOZG91YmxlY2xpY2suY26CECouZG91YmxlY2xp&#xa;Y2suY26CFCouZmxzLmRvdWJsZWNsaWNrLmNughIqLmcuZG91YmxlY2xpY2suY26C&#xa;EWRhcnRzZWFyY2gtY24ubmV0ghMqLmRhcnRzZWFyY2gtY24ubmV0gh1nb29nbGV0&#xa;cmF2ZWxhZHNlcnZpY2VzLWNuLmNvbYIfKi5nb29nbGV0cmF2ZWxhZHNlcnZpY2Vz&#xa;LWNuLmNvbYIYZ29vZ2xldGFnc2VydmljZXMtY24uY29tghoqLmdvb2dsZXRhZ3Nl&#xa;cnZpY2VzLWNuLmNvbYIXZ29vZ2xldGFnbWFuYWdlci1jbi5jb22CGSouZ29vZ2xl&#xa;dGFnbWFuYWdlci1jbi5jb22CGGdvb2dsZXN5bmRpY2F0aW9uLWNuLmNvbYIaKi5n&#xa;b29nbGVzeW5kaWNhdGlvbi1jbi5jb22CJCouc2FmZWZyYW1lLmdvb2dsZXN5bmRp&#xa;Y2F0aW9uLWNuLmNvbYIWYXBwLW1lYXN1cmVtZW50LWNuLmNvbYIYKi5hcHAtbWVh&#xa;c3VyZW1lbnQtY24uY29tggtndnQxLWNuLmNvbYINKi5ndnQxLWNuLmNvbYILZ3Z0&#xa;Mi1jbi5jb22CDSouZ3Z0Mi1jbi5jb22CCzJtZG4tY24ubmV0gg0qLjJtZG4tY24u&#xa;bmV0ghRnb29nbGVmbGlnaHRzLWNuLm5ldIIWKi5nb29nbGVmbGlnaHRzLWNuLm5l&#xa;dIIMYWRtb2ItY24uY29tgg4qLmFkbW9iLWNuLmNvbYIUZ29vZ2xlc2FuZGJveC1j&#xa;bi5jb22CFiouZ29vZ2xlc2FuZGJveC1jbi5jb22CHiouc2FmZW51cC5nb29nbGVz&#xa;YW5kYm94LWNuLmNvbYINKi5nc3RhdGljLmNvbYIUKi5tZXRyaWMuZ3N0YXRpYy5j&#xa;b22CCiouZ3Z0MS5jb22CESouZ2NwY2RuLmd2dDEuY29tggoqLmd2dDIuY29tgg4q&#xa;LmdjcC5ndnQyLmNvbYIQKi51cmwuZ29vZ2xlLmNvbYIWKi55b3V0dWJlLW5vY29v&#xa;a2llLmNvbYILKi55dGltZy5jb22CC2FuZHJvaWQuY29tgg0qLmFuZHJvaWQuY29t&#xa;ghMqLmZsYXNoLmFuZHJvaWQuY29tggRnLmNuggYqLmcuY26CBGcuY2+CBiouZy5j&#xa;b4IGZ29vLmdsggp3d3cuZ29vLmdsghRnb29nbGUtYW5hbHl0aWNzLmNvbYIWKi5n&#xa;b29nbGUtYW5hbHl0aWNzLmNvbYIKZ29vZ2xlLmNvbYISZ29vZ2xlY29tbWVyY2Uu&#xa;Y29tghQqLmdvb2dsZWNvbW1lcmNlLmNvbYIIZ2dwaHQuY26CCiouZ2dwaHQuY26C&#xa;CnVyY2hpbi5jb22CDCoudXJjaGluLmNvbYIIeW91dHUuYmWCC3lvdXR1YmUuY29t&#xa;gg0qLnlvdXR1YmUuY29tghR5b3V0dWJlZWR1Y2F0aW9uLmNvbYIWKi55b3V0dWJl&#xa;ZWR1Y2F0aW9uLmNvbYIPeW91dHViZWtpZHMuY29tghEqLnlvdXR1YmVraWRzLmNv&#xa;bYIFeXQuYmWCByoueXQuYmWCGmFuZHJvaWQuY2xpZW50cy5nb29nbGUuY29tghtk&#xa;ZXZlbG9wZXIuYW5kcm9pZC5nb29nbGUuY26CHGRldmVsb3BlcnMuYW5kcm9pZC5n&#xa;b29nbGUuY26CGHNvdXJjZS5hbmRyb2lkLmdvb2dsZS5jbjAhBgNVHSAEGjAYMAgG&#xa;BmeBDAECATAMBgorBgEEAdZ5AgUDMDwGA1UdHwQ1MDMwMaAvoC2GK2h0dHA6Ly9j&#xa;cmxzLnBraS5nb29nL2d0czFjMy96ZEFUdDBFeF9Gay5jcmwwggEEBgorBgEEAdZ5&#xa;AgQCBIH1BIHyAPAAdgCzc3cH4YRQ+GOG1gWp3BEJSnktsWcMC4fc8AMOeTalmgAA&#xa;AYZuUODIAAAEAwBHMEUCIAChZPbFzksGe+DZ+K/izG9VxISNrY3NwAyUQnTf1nYJ&#xa;AiEAxALMAEaS/kJGgX4ScstQa8RmRvtiMdiB+hSmC1mVaYYAdgCt9776fP8QyIud&#xa;PZwePhhqtGcpXc+xDCTKhYY069yCigAAAYZuUODIAAAEAwBHMEUCIGgVwT83CVcZ&#xa;/g4LgRxE/a6j8Ff442B0Ugg31WbCxDBiAiEAntWtEatXpTmJopn9wQ3cDx+hXG0n&#xa;gN1BWarcNjj4UnMwDQYJKoZIhvcNAQELBQADggEBAIiYlFEOYfXK3/QGY/keOddy&#xa;j2Y3vbBJLjBccbYgVeYUmKuslqedZ2HM5Ge0QVm4nEDUkEGQSzXZYBsPG+15+YKB&#xa;TQUbg9Zq0uZUvWVnOA22lxzv/E7jWymz7+MBJ3NDhFuvpE5QLPtBYWAj1oLNtFPz&#xa;Fbio59hGctLvPjBV8OoDWECW4D4ywVozR7S51SRafqUXEG/AISSjXM/lwJUzmVP/&#xa;/7JU8SguSHGtmU0u5bllMERA7V93R5iaKPxCkfm7rNyX0U9nz9AWbzGyiHbDAEJx&#xa;NdV0oacHdBU0s/uF+N5VNMVQ63Gn6Nd/gYuC2A6VVNRtMKroTBlcr1aTjPqdgx8=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+				</script>
+				<script id="tls-nextprotoneg" output="&#xa;  grpc-exp&#xa;  h2&#xa;  http/1.1">
+					<elem>grpc-exp</elem>
+					<elem>h2</elem>
+					<elem>http/1.1</elem>
+				</script>
+				<script id="fingerprint-strings" output="&#xa;  GetRequest: &#xa;    HTTP/1.0 200 OK&#xa;    Date: Sat, 11 Mar 2023 14:38:11 GMT&#xa;    Expires: -1&#xa;    Cache-Control: private, max-age=0&#xa;    Content-Type: text/html; charset=ISO-8859-1&#xa;    P3P: CP=&quot;This is not a P3P policy! See g.co/p3phelp for more info.&quot;&#xa;    Server: gws&#xa;    X-XSS-Protection: 0&#xa;    X-Frame-Options: SAMEORIGIN&#xa;    Set-Cookie: SOCS=CAAaBgiAia-gBg; expires=Tue, 09-Apr-2024 14:38:11 GMT; path=/; domain=.google.com; Secure; SameSite=lax&#xa;    Set-Cookie: AEC=ARSKqsL_kNTsRMr8fzltJ_urBXC4xFjMGmqn56o0CVh3JaAag5P-Npzmo_g; expires=Thu, 07-Sep-2023 14:38:11 GMT; path=/; domain=.google.com; Secure; HttpOnly; SameSite=lax&#xa;    Set-Cookie: __Secure-ENID=10.SE=AsRUyjzxrMAmUZVDWAZXEKsUGf4Ms73l90Oa9LuPyicoTedlK7lFusIz1rC6mWhnIPHFvhXMiUDcS8gCtR-jQQTDsLtkgDgMLtAiPGWjp2YDkzyB4Su4GTVqe-EM4LobHCbCczPLOV2JXbKbIKayFVwQ-3JcGBpsTcAJ_3PuHP0; expires=Wed, 10-Apr-2024 06:56:29 GMT; path=/; domain=.google.com; Secure; HttpOnly; SameSite=lax&#xa;    Set-Cookie: CONSENT&#xa;  HTTPOptions: &#xa;    HTTP/1.0 405 Method Not Allowed&#xa;    Allow: GET, HEAD&#xa;    Date: Sat, 11 Mar 2023 14:38:12 GMT&#xa;    Content-Type: text/html; charset=UTF-8&#xa;    Server: gws&#xa;    Content-Length: 1592&#xa;    X-XSS-Protection: 0&#xa;    X-Frame-Options: SAMEORIGIN&#xa;    Alt-Svc: h3=&quot;:443&quot;; ma=2592000,h3-29=&quot;:443&quot;; ma=2592000&#xa;    &lt;!DOCTYPE html&gt;&#xa;    &lt;html lang=en&gt;&#xa;    &lt;meta charset=utf-8&gt;&#xa;    &lt;meta name=viewport content=&quot;initial-scale=1, minimum-scale=1, width=device-width&quot;&gt;&#xa;    &lt;title&gt;Error 405 (Method Not Allowed)!!1&lt;/title&gt;&#xa;    &lt;style&gt;&#xa;    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* &gt; body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{backgr">
+					<elem key="GetRequest">&#xa;    HTTP/1.0 200 OK&#xa;    Date: Sat, 11 Mar 2023 14:38:11 GMT&#xa;    Expires: -1&#xa;    Cache-Control: private, max-age=0&#xa;    Content-Type: text/html; charset=ISO-8859-1&#xa;    P3P: CP=&quot;This is not a P3P policy! See g.co/p3phelp for more info.&quot;&#xa;    Server: gws&#xa;    X-XSS-Protection: 0&#xa;    X-Frame-Options: SAMEORIGIN&#xa;    Set-Cookie: SOCS=CAAaBgiAia-gBg; expires=Tue, 09-Apr-2024 14:38:11 GMT; path=/; domain=.google.com; Secure; SameSite=lax&#xa;    Set-Cookie: AEC=ARSKqsL_kNTsRMr8fzltJ_urBXC4xFjMGmqn56o0CVh3JaAag5P-Npzmo_g; expires=Thu, 07-Sep-2023 14:38:11 GMT; path=/; domain=.google.com; Secure; HttpOnly; SameSite=lax&#xa;    Set-Cookie: __Secure-ENID=10.SE=AsRUyjzxrMAmUZVDWAZXEKsUGf4Ms73l90Oa9LuPyicoTedlK7lFusIz1rC6mWhnIPHFvhXMiUDcS8gCtR-jQQTDsLtkgDgMLtAiPGWjp2YDkzyB4Su4GTVqe-EM4LobHCbCczPLOV2JXbKbIKayFVwQ-3JcGBpsTcAJ_3PuHP0; expires=Wed, 10-Apr-2024 06:56:29 GMT; path=/; domain=.google.com; Secure; HttpOnly; SameSite=lax&#xa;    Set-Cookie: CONSENT</elem>
+					<elem key="HTTPOptions">&#xa;    HTTP/1.0 405 Method Not Allowed&#xa;    Allow: GET, HEAD&#xa;    Date: Sat, 11 Mar 2023 14:38:12 GMT&#xa;    Content-Type: text/html; charset=UTF-8&#xa;    Server: gws&#xa;    Content-Length: 1592&#xa;    X-XSS-Protection: 0&#xa;    X-Frame-Options: SAMEORIGIN&#xa;    Alt-Svc: h3=&quot;:443&quot;; ma=2592000,h3-29=&quot;:443&quot;; ma=2592000&#xa;    &lt;!DOCTYPE html&gt;&#xa;    &lt;html lang=en&gt;&#xa;    &lt;meta charset=utf-8&gt;&#xa;    &lt;meta name=viewport content=&quot;initial-scale=1, minimum-scale=1, width=device-width&quot;&gt;&#xa;    &lt;title&gt;Error 405 (Method Not Allowed)!!1&lt;/title&gt;&#xa;    &lt;style&gt;&#xa;    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* &gt; body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{backgr</elem>
+				</script>
+				<script id="http-title" output="Did not follow redirect to https://www.google.com/">
+					<elem key="redirect_url">https://www.google.com/</elem>
+				</script>
+			</port>
+		</ports>
+		<os>
+			<portused state="open" proto="tcp" portid="80"/>
+			<osmatch name="Kyocera CopyStar CS-2560 printer" accuracy="89" line="42256">
+				<osclass type="printer" vendor="Kyocera" osfamily="embedded" accuracy="89">
+					<cpe>cpe:/h:kyocera:cs-2560</cpe>
+				</osclass>
+			</osmatch>
+		</os>
+		<uptime seconds="15126100" lastboot="Sat Sep 17 14:57:35 2022"/>
+		<tcpsequence index="261" difficulty="Good luck!" values="7FC4F4D4,26B0C0AF,A31723B1,2DAE4BC6,1B6FF11F,7F6CABEA"/>
+		<ipidsequence class="All zeros" values="0,0,0,0,0,0"/>
+		<tcptssequence class="other" values="E6CE4BB2,E6CE4BCD,E6CE4BE9,E6CE4C04,E6CE4C20,E6CE4C3C"/>
+		<times srtt="11406" rttvar="3035" to="100000"/>
+	</host>
+	<runstats>
+		<finished time="1678545555" timestr="Sat Mar 11 15:39:15 2023" summary="Nmap done at Sat Mar 11 15:39:15 2023; 3 IP addresses (3 hosts up) scanned in 125.56 seconds" elapsed="125.56" exit="success"/>
+		<hosts up="3" down="0" total="3"/>
+	</runstats>
+</nmaprun>

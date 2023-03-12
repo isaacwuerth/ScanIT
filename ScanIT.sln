@@ -4,9 +4,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScanIT", "ScanIT\ScanIT.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScanIT.Playground.Testing", "ScanIT.Playground.Testing\ScanIT.Playground.Testing.csproj", "{1A055E28-DBED-4892-AA4E-6B246D0F233D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScanIT.Nmap", "ScanIT.Nmap\ScanIT.Nmap.csproj", "{AECB087A-610C-44D6-A343-C6603AF72EC3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScanIT.Scanner.Nmap", "ScanIT.Scanner.Nmap\ScanIT.Scanner.Nmap.csproj", "{AECB087A-610C-44D6-A343-C6603AF72EC3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScanIT.Nmap.Test", "ScanIT.Nmap.Test\ScanIT.Nmap.Test.csproj", "{93690271-30F0-4639-BCD5-4A93DCD53346}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScanIT.Scanner.Nmap.Test", "ScanIT.Scanner.Nmap.Test\ScanIT.Scanner.Nmap.Test.csproj", "{93690271-30F0-4639-BCD5-4A93DCD53346}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScanIT.Common", "ScanIT.Common\ScanIT.Common.csproj", "{5C4D0C84-22CA-4387-95CF-825F11DE87BD}"
 EndProject

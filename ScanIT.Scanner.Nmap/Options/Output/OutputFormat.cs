@@ -1,4 +1,4 @@
-﻿namespace ScanIT.Nmap;
+﻿namespace ScanIT.Scanner.Nmap;
 
 public enum OutputFormat {
     None,

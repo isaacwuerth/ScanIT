@@ -1,4 +1,4 @@
-﻿namespace ScanIT.Nmap.Options.Target;
+﻿namespace ScanIT.Scanner.Nmap.Options.Target;
 
 public interface ITarget
 {

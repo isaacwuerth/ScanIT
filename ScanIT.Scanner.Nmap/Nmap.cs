@@ -7,11 +7,11 @@ using System.Xml;
 using System.Xml.Linq;
 using System.Xml.Schema;
 using System.Xml.Serialization;
-using ScanIT.Nmap.Model;
-using ScanIT.Nmap.Options;
-using ScanIT.Nmap.Options.Target;
+using ScanIT.Scanner.Nmap.Model;
+using ScanIT.Scanner.Nmap.Options;
+using ScanIT.Scanner.Nmap.Options.Target;
 
-namespace ScanIT.Nmap;
+namespace ScanIT.Scanner.Nmap;
 
 public partial class Nmap
 {

@@ -1,6 +1,8 @@
 ﻿using System.Globalization;
+using ScanIT.Nmap.Model;
+using ScanIT.Scanner.Nmap.Model;
 
-namespace ScanIT.Nmap.Model;
+namespace ScanIT.Common.Converter;
 
 public static class ConvertResultToScan
 {

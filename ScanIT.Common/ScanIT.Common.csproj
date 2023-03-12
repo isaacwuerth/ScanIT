@@ -7,7 +7,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\ScanIT.Nmap\ScanIT.Nmap.csproj" />
+      <ProjectReference Include="..\ScanIT.Scanner.Nmap\ScanIT.Scanner.Nmap.csproj" />
     </ItemGroup>
 
 </Project>

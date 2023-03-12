@@ -1,6 +1,6 @@
-﻿using ScanIT.Nmap.Options.Ports;
+﻿using ScanIT.Scanner.Nmap.Options.Ports;
 
-namespace ScanIT.Nmap.Options;
+namespace ScanIT.Scanner.Nmap.Options;
 
 public class ScanOptions
 {

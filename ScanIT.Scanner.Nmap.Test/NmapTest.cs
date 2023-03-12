@@ -1,7 +1,7 @@
-using ScanIT.Nmap;
-using ScanIT.Nmap.Options;
-using ScanIT.Nmap.Options.Ports;
-using ScanIT.Nmap.Options.Target;
+using ScanIT.Scanner.Nmap;
+using ScanIT.Scanner.Nmap.Options;
+using ScanIT.Scanner.Nmap.Options.Ports;
+using ScanIT.Scanner.Nmap.Options.Target;
 using Xunit.Abstractions;
 
 namespace ScanITTest.NmapTest;
@@ -15,10 +15,19 @@ public class NmapTests
         this.output = output;
     }
 
+    private static string NmapScanResultFile { get; } = "./Resources/NmapScanResult.xml";
+    
+    [Fact]
+    public void SerializeNmapScanResult()
+    {
+        var nmapScanResult = Nmap.ConvertResult(NmapScanResultFile);
+        Assert.NotNull(nmapScanResult);
+    }
+    
     [Fact]
     public void LocateNmap()
     {
-        var nmap = new ScanIT.Nmap.Nmap();
+        var nmap = new ScanIT.Scanner.Nmap.Nmap();
         var path = Nmap.GetPathToNmap();
         Assert.NotEmpty(path);
         output.WriteLine(path);
@@ -27,7 +36,7 @@ public class NmapTests
     [Fact]
     public void BuildPortArgumentWithPortList_3Ports_ReturnsValidArugument()
     {
-        var nmap = new ScanIT.Nmap.Nmap();
+        var nmap = new ScanIT.Scanner.Nmap.Nmap();
         var targets = new List<ITarget>
         {
             new IpAddress("127.0.0.1"),
@@ -41,7 +50,7 @@ public class NmapTests
     [Fact]
     public void BuildPortListTest()
     {
-        var nmap = new ScanIT.Nmap.Nmap();
+        var nmap = new ScanIT.Scanner.Nmap.Nmap();
         var ports = new PortList { 80, 443, 8080 };
         var port = ports.ToString();
         Assert.Equal("-p 80,443,8080", port.ToString());
@@ -50,7 +59,7 @@ public class NmapTests
     [Fact]
     public void BuildPortArgumentWithTopPorts_Valid_ReturnsValidArgument()
     {
-        var nmap = new ScanIT.Nmap.Nmap();
+        var nmap = new ScanIT.Scanner.Nmap.Nmap();
         var port = new TopPorts(1000);
         Assert.Equal("–top-ports 1000", port.ToString());
     }
@@ -58,7 +67,7 @@ public class NmapTests
     [Fact]
     public void BuildPortArgumentWithAllPorts_Valid_ReturnsValidArgument()
     {
-        var nmap = new ScanIT.Nmap.Nmap();
+        var nmap = new ScanIT.Scanner.Nmap.Nmap();
         var port = new AllPorts();
         Assert.Equal("-p-", port.ToString());
     }
@@ -66,7 +75,7 @@ public class NmapTests
     [Fact]
     public void BuildPortArgumentWithPortRange_Valid_ReturnsValidArgument()
     {
-        var nmap = new ScanIT.Nmap.Nmap();
+        var nmap = new ScanIT.Scanner.Nmap.Nmap();
         var port = new PortRange(1, 1000);
         Assert.Equal("-p 1-1000", port.ToString());
     }
@@ -74,7 +83,7 @@ public class NmapTests
     [Fact]
     public void BuildPortArgumentWithFastPortScan_Valid_ReturnsValidArgument()
     {
-        var nmap = new ScanIT.Nmap.Nmap();
+        var nmap = new ScanIT.Scanner.Nmap.Nmap();
         var port = new FastPortScan();
         Assert.Equal("-F", port.ToString());
     }
@@ -82,7 +91,7 @@ public class NmapTests
     [Fact]
     public void BuildNmapArgumentLocalHostPort80_ReturnsValidArgument()
     {
-        var nmap = new ScanIT.Nmap.Nmap();
+        var nmap = new ScanIT.Scanner.Nmap.Nmap();
         var scan = new ScanOptions();
         scan.Ports = new SinglePort(80);
         var target = new IpAddress("127.0.0.1");
@@ -93,7 +102,7 @@ public class NmapTests
     [Fact]
     public void RunScanLocalHostPort80_ReturnsValidOutput()
     {
-        var nmap = new ScanIT.Nmap.Nmap();
+        var nmap = new ScanIT.Scanner.Nmap.Nmap();
         var scan = new ScanOptions();
         scan.Ports = new SinglePort(80);
         scan.Output = new Output();
@@ -136,7 +145,7 @@ public class NmapTests
     [Fact]
     public void ArgumentWithXMLOutputOnLocalhostPort80_ReturnsValidArgument()
     {
-        var nmap = new ScanIT.Nmap.Nmap();
+        var nmap = new ScanIT.Scanner.Nmap.Nmap();
         var scan = new ScanOptions();
         scan.Ports = new SinglePort(80);
         scan.Output = new Output();

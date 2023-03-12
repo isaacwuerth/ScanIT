@@ -1,4 +1,4 @@
-﻿namespace ScanIT.Nmap.Options.PortScanning;
+﻿namespace ScanIT.Scanner.Nmap.Options.PortScanning;
 
 public enum PortScanningTechniques
 {

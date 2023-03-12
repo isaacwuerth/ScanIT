@@ -1,6 +1,6 @@
 ﻿using System.Text;
 
-namespace ScanIT.Nmap.Options.Ports;
+namespace ScanIT.Scanner.Nmap.Options.Ports;
 
 public class PortList: List<int>, IPort
 {

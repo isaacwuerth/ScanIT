@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.Text;
 
-namespace ScanIT.Nmap;
+namespace ScanIT.Scanner.Nmap;
 
 public class Output
 {

@@ -12,6 +12,10 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
+      - name: Install nmap
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y nmap
       - name: Setup .NET Core SDK ${{ matrix.dotnet-version }}
         uses: actions/setup-dotnet@v3
         with:

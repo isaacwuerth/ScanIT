@@ -12,6 +12,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScanIT.Common", "ScanIT.Com
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScanIT.Common.Test", "ScanIT.Common.Test\ScanIT.Common.Test.csproj", "{B4B0783C-CDCE-4F0A-B0D8-FD570F084097}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScanIT.Worker", "ScanIT.Worker\ScanIT.Worker.csproj", "{CA0286C5-9E01-4580-AB04-456948EEE3AB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -42,5 +44,9 @@ Global
 		{B4B0783C-CDCE-4F0A-B0D8-FD570F084097}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B4B0783C-CDCE-4F0A-B0D8-FD570F084097}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B4B0783C-CDCE-4F0A-B0D8-FD570F084097}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA0286C5-9E01-4580-AB04-456948EEE3AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA0286C5-9E01-4580-AB04-456948EEE3AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA0286C5-9E01-4580-AB04-456948EEE3AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA0286C5-9E01-4580-AB04-456948EEE3AB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

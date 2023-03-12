@@ -19,7 +19,13 @@ public partial class Nmap
 
     public static string GetPathToNmap()
     {
+# if Linux 
+        return "nmap";
+# elif Windows
         return LocateExecutable("nmap.exe");
+# else
+        throw new PlatformNotSupportedException();
+# endif
     }
 
     public static string BuildTargetArgument(List<ITarget> targets)
